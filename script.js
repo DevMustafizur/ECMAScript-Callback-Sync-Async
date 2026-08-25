@@ -85,15 +85,6 @@ myCart.prototype.saveCartItem = function (productId, quantity, totalPrice, callb
         totalPrice,
     }
 
-    // setTimeout(() => {
-    //     const result = this.carts.push(storeCart)
-    //     if (!result) {
-    //         return callback(new myError("something went wrong", 404), null)
-    //     }
-    //     return callback(null, { success: true, message: "cart added", data: storeCart })
-    // }, 2000)
-
-    // sync code
     const result = this.carts.push(storeCart)
     if (!result) {
         return callback(new myError("something went wrong", 404), null)
